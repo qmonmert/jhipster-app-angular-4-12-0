@@ -35,7 +35,8 @@ The `yarn run` command will list all of the scripts available to run for this pr
 Service workers are commented by default, to enable them please uncomment the following code.
 
 * The service worker registering script in index.html
-```
+
+```html
 <script>
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker
@@ -43,6 +44,7 @@ Service workers are commented by default, to enable them please uncomment the fo
         .then(function() { console.log('Service Worker Registered'); });
     }
 </script>
+```
 
 Note: workbox creates the respective service worker and dynamically generate the `sw.js`
 
